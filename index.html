@@ -14,57 +14,46 @@
   <div class="row">
     <section class="col-xs-12">
 
-      <h2>Inline Code</h2>
-      <p>To emphasize text, you can use the <code>&lt;em&gt;</code> tag.</p>
+      <h1>Buttons</h1>
 
-      <h2>Control Keys</h2>
-      <p>To stop the execution of a process use <kbd>control-c</kbd> or <kbd>q</kbd></p>
+      <h2>Types</h2>
+      <a class="btn btn-default" href="#" role="button">Link</a>
+      <button class="btn btn-default" type="submit">Button</button>
+      <input class="btn btn-default" type="submit" value="Input">
 
-      <h2>Variables</h2>
-      <var>e</var> = <var>m</var><var>c</var>&sup2;
+      <h2>Contextual Classes</h2>
+      <button class="btn btn-default">
+        Default</button>
+      <button class="btn btn-primary">
+        Primary</button>
+      <button class="btn btn-success">
+        Success</button>
+      <button class="btn btn-info">
+        Info</button>
+      <button class="btn btn-warning">
+        Warning</button>
+      <button class="btn btn-danger">
+        Danger</button>
 
-      <h2>Short Script</h2>
+      <h2>Sizes</h2>
+      <button class="btn btn-default">
+        Default</button>
+      <button class="btn btn-default btn-lg">
+        Large</button>
+      <button class="btn btn-default btn-sm">
+        Small</button>
+      <button class="btn btn-default btn-xs">
+        Extra Small</button>
+      <button class="btn btn-default btn-block">
+        Block Level</button>
 
-      <pre>
-        //replace IMG inside carousels with a background image
-        $('#featured .item img').each(function() {
-          var imgSrc = $(this).attr('src');
-          $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-          $(this).remove();
-        });
-      </pre>
+      <h2>States</h2>
+      <h3>Active</h3>
+      <button  class="btn btn-default active">Active Button</button>
 
-      <h4>Sample Output</h4>
-      <samp>
-        &lt;div class=&quot;item active&quot; style=&quot;background-image: url(images/carousel-lifestyle.jpg);&quot;&gt;&lt;/div&gt;
-      </samp>
-
-
-      <h2>Long Script</h2>
-      <pre class='pre-scrollable'>
-        //replace IMG inside carousels with a background image
-        $('#featured .item img').each(function() {
-          var imgSrc = $(this).attr('src');
-          $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-          $(this).remove();
-        });
-
-        //Use smooth scrolling when clicking on navigation
-        $('.navbar a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') ===
-            this.pathname.replace(/^\//,'') &&
-            location.hostname === this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top-topoffset+2
-              }, 500);
-              return false;
-            } //target.length
-          } //click function
-        }); //smooth scrolling
-      </pre>
+      <h3>Disabled</h3>
+      <button class="btn btn-default" disabled='disabled'>Disabled Button</button>
+      <a class="btn btn-default disabled" href="#">Disabled Link Button</a>
 
     </section>
   </div><!-- row -->
