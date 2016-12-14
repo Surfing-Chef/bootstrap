@@ -1,6 +1,6 @@
-@media (max-width: 767px) {
-  .img-responsive {
-    max-width: 50%;
-    min-width: 300px;
-  }
+.imghead {
+  background-image: url('../images/field_head.jpg');
+  background-position: bottom center;
+  background-size: cover;
+  height: 300px;
 }
